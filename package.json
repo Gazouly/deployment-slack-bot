@@ -2,8 +2,10 @@
   "name": "deployment-slack-bot",
   "version": "0.0.0",
   "description": "A bot that notifies team members about new releases changelogs",
-  "main": "index.js",
+  "main": "src",
   "scripts": {
+    "dev": "nodemon .",
+    "start": "node .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +22,18 @@
   "bugs": {
     "url": "https://github.com/Gazouly/deployment-slack-bot/issues"
   },
-  "homepage": "https://github.com/Gazouly/deployment-slack-bot#readme"
+  "homepage": "https://github.com/Gazouly/deployment-slack-bot#readme",
+  "dependencies": {
+    "@slack/rtm-api": "^5.0.5",
+    "@slack/web-api": "^5.13.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "helmet": "^4.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
 }
