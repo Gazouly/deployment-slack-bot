@@ -50,7 +50,20 @@ SLACK_OAUTH_TOKEN = <your-oauth-access-token>
     })
   })()
 ```
+- Open `changelog.txt` and add your changelog of the next build, for example here's mine
+```
+There's a new release on testing environment uploaded by Gazouly
+Environment Link: <env-link>
 
+Changelog:
+- Change Log No. 1
+- Change Log No. 2
+- Change Log No. 3
+- Change Log No. 4
+- Change Log No. 5
+- Change Log No. 6
+- Change Log No. 7
+```
 - Edit your pipeline stages to run this script after every new build
 ```
 pipeline {
